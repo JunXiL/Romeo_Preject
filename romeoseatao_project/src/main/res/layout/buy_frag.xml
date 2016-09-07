@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/iv_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/europe_icon_classification"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="买欧洲"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/iv_buy_seach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/europe_icon_search"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/prlv_buy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00ffffff"
+        />
+
+</LinearLayout
+
+    >
